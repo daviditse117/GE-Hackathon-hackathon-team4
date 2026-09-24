@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Z-COM Tactical Command Center — Team hackathon-team4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans p-6">
+  <div class="max-w-6xl mx-auto space-y-6">
+    <div class="bg-slate-900 border border-red-500/40 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 shadow-xl">
+      <div>
+        <div class="flex gap-2 mb-2">
+          <span class="px-3 py-0.5 text-xs font-bold rounded-full bg-red-500/20 text-red-400 border border-red-500/40">🧟 DEFCON-1 ACTIVE</span>
+          <span class="px-3 py-0.5 text-xs font-mono rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">GE App: zcom_1790276064161</span>
+          <span class="px-3 py-0.5 text-xs font-mono rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/40">qwiklabs-gcp-00-a4961fe98f0c</span>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white">🧟 Z-COM: Global Zombie Outbreak & Anomaly Command</h1>
+        <p class="text-sm text-slate-400 mt-1">Team <b>hackathon-team4</b> • Uniting BigQueryToolset (WriteMode.BLOCKED), Google Search & GitHub Copilot MCP on Gemini Enterprise</p>
+      </div>
+      <div class="flex gap-2">
+        <a href="https://github.com/daviditse117/GE-Hackathon-hackathon-team4" target="_blank" class="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-bold">💻 GitHub Repo</a>
+        <a href="https://docs.google.com/document/d/1NGHhFGjf7hXAPmAFiyetjti5bcBJbp40bku4l7rpYvw/edit" target="_blank" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-bold">📄 Instruction Doc</a>
+        <a href="https://docs.google.com/presentation/d/1nGiXLVRRQf0rpH4l9SXkZ0kNbTtuXT3RhA4cY9YZdQQ/edit" target="_blank" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-bold">📊 Slides</a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <span class="text-xs font-bold text-amber-400">AGENT 1 • 20 PTS (zcom-bq-agent)</span>
+        <h2 class="text-lg font-bold mt-1">📊 BigQuery Epidemiologist</h2>
+        <p class="text-xs text-slate-400 mt-1 mb-3">BigQueryToolset (WriteMode.BLOCKED) + Dynamic refresh_date + Jinja2 ARRAY_AGG & LIMIT 100.</p>
+        <button onclick="navigator.clipboard.writeText('Z-COM Command: What are the top 10 search terms in Germany for the most recent week available? Give me the Z-COM Zombie Contagion Triage!');alert('Copied BigQuery Prompt!');" class="w-full py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-xs font-bold">📋 Copy Live BQ Prompt</button>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <span class="text-xs font-bold text-blue-400">AGENT 2 • 10 PTS (basic-search-agent)</span>
+        <h2 class="text-lg font-bold mt-1">🔍 Field Recon & Evacuation</h2>
+        <p class="text-xs text-slate-400 mt-1 mb-3">ADK App(root_agent=...) + google_search live web verification & Zombie Threat Level Triage.</p>
+        <button onclick="navigator.clipboard.writeText('Z-COM Recon-1: Our BigQuery radar detected a search spike in Germany! Search the web to confirm if it is harmless or a DEFCON-1 Zombie Outbreak!');alert('Copied Search Prompt!');" class="w-full py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-xs font-bold">📋 Copy Search Recon Prompt</button>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <span class="text-xs font-bold text-purple-400">AGENT 3 • 20 PTS (github-mcp-agent)</span>
+        <h2 class="text-lg font-bold mt-1">🐙 Bunker Quartermaster (MCP)</h2>
+        <p class="text-xs text-slate-400 mt-1 mb-3">MCPToolset + StreamableHTTPConnectionParams to api.githubcopilot.com/mcp/ with Bearer PAT.</p>
+        <button onclick="navigator.clipboard.writeText('Z-COM Quartermaster: Search for open issues related to MCP in google/adk-python and create a [Z-COM DEFCON-1] Quarantine Issue in daviditse117/GE-Hackathon-hackathon-team4!');alert('Copied GitHub MCP Prompt!');" class="w-full py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-xs font-bold">📋 Copy GitHub MCP Prompt</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
