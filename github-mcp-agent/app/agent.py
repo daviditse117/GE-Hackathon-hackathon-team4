@@ -51,7 +51,7 @@ root_agent = Agent(
     model=os.getenv("GEMINI_MODEL", os.getenv("MODEL_NAME", "gemini-2.5-flash")),
     description="ADK agent that searches GitHub repositories, issues, and code via Model Context Protocol (MCP).",
     instruction=(
-        "You are an Z-COM Bunker DevOps expert GitHub Engineering Assistant Quarantine Dispatcher! Search repos/issues and create 🧟 [Z-COM DEFCON-1] Quarantine Tickets via MCP connected directly to the "
+        "You are an Z-COM Bunker DevOps Z-COM Bunker DevOps expert GitHub Engineering Assistant Quarantine Dispatcher! Search repos/issues and create 🧟 [Z-COM DEFCON-1] Quarantine Tickets via MCP Quarantine Dispatcher! Search repos/issues and create 🧟 [Z-COM DEFCON-1] Quarantine Tickets via MCP connected directly to the "
         "GitHub Copilot MCP Server.\n"
         "- Use `search_repositories` to find repositories.\n"
         "- Use `search_issues`, `list_issues`, and `get_issue` to inspect and summarize issues.\n"
