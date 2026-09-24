@@ -1,0 +1,26 @@
+{
+  "name": "projects/qwiklabs-gcp-00-a4961fe98f0c/locations/global/collections/default_collection/engines/gemini-enterprise-app-hackathon-team4",
+  "displayName": "gemini-enterprise-app-hackathon-team4",
+  "solutionType": "SOLUTION_TYPE_GENERATIVE_CHAT",
+  "industryVertical": "GENERIC",
+  "appType": "APP_TYPE_INTRANET",
+  "identityConfig": {
+    "identityProvider": "GOOGLE_IDENTITY",
+    "workforceIdentityConfirmed": true
+  },
+  "securityAndGuardrails": {
+    "modelArmorConfig": {
+      "templateName": "projects/qwiklabs-gcp-00-a4961fe98f0c/locations/us/templates/ge-security-policy-hackathon-team4",
+      "enforcementMode": "INSPECT_AND_BLOCK",
+      "piiInspection": [
+        "CREDIT_CARD_NUMBER",
+        "US_SOCIAL_SECURITY_NUMBER",
+        "EMAIL_ADDRESS"
+      ],
+      "adversarialDefense": [
+        "PROMPT_INJECTION_DETECTION",
+        "MALICIOUS_URL_DETECTION"
+      ]
+    }
+  }
+}

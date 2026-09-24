@@ -1,0 +1,10 @@
+[project]
+name = "github-mcp-agent"
+version = "0.1.0"
+description = "ADK GitHub MCP Agent for Gemini Enterprise Hackathon"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk[a2a]>=1.0.0",
+    "mcp>=1.0.0",
+    "python-dotenv>=1.0.1",
+]

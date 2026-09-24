@@ -1,0 +1,11 @@
+[project]
+name = "basic-search-agent"
+version = "0.1.0"
+description = "ADK Basic Search Agent for Gemini Enterprise Hackathon"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk>=1.0.0",
+    "google-cloud-logging>=3.10.0",
+    "python-dotenv>=1.0.1",
+]
