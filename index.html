@@ -71,3 +71,20 @@
 </div>
 <script src="zcom_data.js"></script><script src="zcom_app.js"></script>
 <script>renderSector();runLoop();</script>
+<div class="max-w-6xl mx-auto px-6 pb-10">
+  <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-3">
+    <div class="flex justify-between items-center">
+      <b class="text-emerald-400 text-xs">🧠 AGENT SYSTEM INSTRUCTIONS & LIVE DEMO PROMPTS</b>
+      <div class="flex gap-1">
+        <button onclick="setP('bq')" class="px-2 py-1 bg-amber-600 rounded text-xs font-bold">1. BQ Jinja2</button>
+        <button onclick="setP('search')" class="px-2 py-1 bg-blue-600 rounded text-xs font-bold">2. Search Recon</button>
+        <button onclick="setP('mcp')" class="px-2 py-1 bg-purple-600 rounded text-xs font-bold">3. GitHub MCP</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <pre id="sP" class="p-3 bg-slate-950 border border-slate-800 rounded text-xs text-slate-300 whitespace-pre-wrap"></pre>
+      <textarea id="uP" class="p-3 bg-slate-950 border border-slate-800 rounded text-xs text-emerald-400 font-mono h-28"></textarea>
+    </div>
+  </div>
+</div>
+<script src="zcom_prompts.js"></script><script>setP('bq');</script>
