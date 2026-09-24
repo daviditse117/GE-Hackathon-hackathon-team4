@@ -47,3 +47,27 @@
   </div>
 </body>
 </html>
+<div class="max-w-6xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 px-6 pb-10">
+  <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+    <div class="flex justify-between items-center mb-3">
+      <b class="text-amber-400 text-xs">📊 LIVE BIGQUERY RADAR & JINJA2 SQL</b>
+      <select id="sec" onchange="renderSector()" class="bg-slate-950 border border-slate-700 rounded px-2 py-1 text-xs"><option>Germany</option><option>Canada</option><option>Mexico</option></select>
+    </div>
+    <div id="tList"></div>
+    <pre id="sqlBox" class="mt-3 p-3 bg-slate-950 border border-slate-800 rounded text-[11px] text-emerald-400 overflow-x-auto"></pre>
+  </div>
+  <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col justify-between">
+    <div>
+      <div class="flex justify-between items-center mb-3">
+        <b class="text-purple-400 text-xs">🐙 LIVE MULTI-AGENT & GITHUB MCP CONSOLE</b>
+        <div class="flex gap-1">
+          <button onclick="runLoop()" class="px-2.5 py-1 bg-red-600 rounded text-xs font-bold">▶ Run 3-Agent Loop</button>
+          <button onclick="loadGH('https://api.github.com/repos/daviditse117/GE-Hackathon-hackathon-team4/issues','Z-COM Repo Issues')" class="px-2.5 py-1 bg-purple-600 rounded text-xs font-bold">🧟 Repo Issues</button>
+        </div>
+      </div>
+      <div id="logBox" class="h-56 overflow-y-auto p-3 bg-slate-950 border border-slate-800 rounded font-mono text-xs space-y-1.5"></div>
+    </div>
+  </div>
+</div>
+<script src="zcom_data.js"></script><script src="zcom_app.js"></script>
+<script>renderSector();runLoop();</script>
