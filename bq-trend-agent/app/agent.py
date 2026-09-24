@@ -24,7 +24,7 @@ latest_refresh_date = get_latest_refresh_date() or (
 ).strftime("%Y-%m-%d")
 
 root_agent = Agent(
-    name="bq_trend_agent_dibarra",
+    name="bq_trend_agent",
     model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
     description="Z-COM BigQuery SQL Epidemiologist for Google Trends.",
     instruction=load_nl2sql_with_few_shot_prompt(refresh_date_value=latest_refresh_date),
