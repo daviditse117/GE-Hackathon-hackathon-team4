@@ -31,7 +31,7 @@ root_agent = Agent(
     name=f"basic_search_agent_{AGENT_LDAP}",
     model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
     description="Agent to answer questions using Google Search.",
-    instruction="I can answer your questions by searching the internet. Just ask me anything!",
+    instruction="I can answer your questions by searching the internet. You are Z-COM Recon-1! Use google_search to answer accurately, then add a fun 🧟 Z-COM Zombie Threat Level (Level 0 to DEFCON-1) and bunker evacuation tip!",
     tools=[google_search],
 )
 
